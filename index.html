@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <style type="text/css">
+                /*Resets and Global*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #f3f3f3;
+        }
+        table {
+            border-spacing: 0;
+        }
+        td {
+            border: 0;
+        }
+        a {
+            text-decoration: none;
+            color:  #45ebb3;
+        }
+        ul {
+            list-style-type: none;
+        }
+                /*Containers*/
+        .the_big_lebowski {
+            width: 100%;
+            table-layout: fixed;
+        }
+        .wrapper {
+            max-width: 600px;
+            margin: 1rem 0;
+            background-color: #f4f4fb;
+        }
+       .the_dude {
+           margin: 0 auto;
+           width: 100%;
+           max-width: 600px;
+       }
+            /*btns*/
+       .btn {
+           background-color: #45ebb3;
+           padding: 1rem 2rem;
+           color:#e9fff8;
+           border-radius: 5px;
+           transition: 0.2s all linear;
+       }
+       .btn:hover {
+        background-color: #0fd694;
+       }
+            /*External*/
+       .links {
+           margin: 0 auto;
+           padding: 0.5rem;
+       }
+       .first_link {
+           margin-bottom: 0.25rem;
+       }
+       .link {
+           display: block;
+           transition: 0.2s all linear;
+       }
+       .link:hover {
+           color:  #f3f3f3;
+       }
+            /*Fonts*/
+        .intro {
+            font-weight: 400;
+            font-size: 18px;
+        }
+       .username {
+            font-weight: bold;
+            font-size: 20px;
+            color: #252525;
+       }
+       .special {
+           font-size: 20px;
+           color: #252525;
+       }
+       .info {
+            font-size: 18px;
+            color: #252525;
+       }
+       .brand {
+           font-size: 18px;
+           font-weight: bold;
+       }
+            /*Media Q*/
+       @media screen and (min-width: 400px) {
+            ul {
+                display: flex;
+                justify-content: center;
+            }
+            li {
+                margin-left: 5px;
+            }
+            .prize {
+                width: 300px;
+            }
+                        /*Fonts*/
+            .intro {
+                 font-size: 20px;
+             }
+            .username {
+                  font-size: 24px;
+              }
+             .special {
+                  font-size: 22px;
+                  color: #252525;
+             }
+             .info {
+                 font-size: 20px;
+                 color: #252525;
+             }
+             .brand {
+                 font-size: 20px;
+                 font-weight: bold;
+             }
+             .link {
+                display: inline-block;
+             }
+             .first_link {
+                 padding-right: 0.5rem;
+            }
+       }
+       @media screen and (min-width: 600px) {
+                    /*Fonts*/
+            .intro {
+                 font-size: 22px;
+             }
+            .username {
+                  font-size: 28px;
+              }
+             .special {
+                  font-size: 24px;
+                  color: #252525;
+             }
+             .info {
+                 font-size: 22px;
+                 color: #252525;
+             }
+             .brand {
+                 font-size: 22px;
+                 font-weight: bold;
+             }
+       }
+    </style>
+</head>
+<body>
+    <center class="the_big_lebowski">
+        <div class="wrapper">
+            <table class="the_dude">
+                <!--logo-->
+                <tr>
+                    <td>
+                       <table width="100%" style="background-color: #252525;padding: 0.5rem 0;padding-left: 2rem; height: 40px;">
+                       </table>
+                    </td>
+                </tr>
+                <!--!-logo-->
+            <!--content-->
+                <tr>
+                    <trd>
+                        <table width="100%">
+                            <tr>
+                                <td style="padding: 2rem;text-align: center;">
+                                    <p class="intro">Hello <span class="username">FirstName,</span></p>
+                                    <p style="margin: 2rem 0;" class="special">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nisi in fugiat, enim quidem mollitia?</p>
+                                    <img src="prize.png" width="200px"alt="" style="max-width: 100%;margin-bottom: 2rem;" class="prize">
+                                    <p style="margin-bottom: 2rem;" class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat animi aspernatur repellat, deserunt in dolorem soluta officiis consequatur, amet ratione, cumque neque totam asperiores inventore. Obcaecati fuga quidem reiciendis impedit amet perspiciatis eveniet dolor ullam deserunt provident! Debitis, labore esse!</p>
+                                    <a href="https://youtube.com" class="btn">Lorem, ipsum.</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </trd>
+                </tr>
+                <!--External liks-->
+                <tr>
+                    <td>
+                        <table width="100%" style="text-align: center; background-color:#252525;" class="links">
+                            <tr>
+                                <td>
+                                        <a href="#" target="_blank" class="first_link link">Button</a>
+                                        <a href="#" target="_blank" class="link">Button</a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--!-External liks-->
+                <!--Footer-->
+                <tr>
+                    <td>
+                        <table width="100%" style="text-align: center; margin: 1rem 0;">
+                            <tr>
+                                <td>
+                                    <p class="brand">Button</p>
+                                    <p>&copy; text</p>
+                                    <p>Lorem ipsum dolor sit amet consectetur quibusdam?</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <!--!-Footer-->
+            <!--!-content-->
+            </table>
+        </div>
+    </center>
+</body>
+</html>

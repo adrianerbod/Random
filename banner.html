@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <title>Test Banner</title>
+    <style type="text/css">
+                /*Resets and Global*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body {
+            color: #3a3a3a;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .list, .links {
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+        }
+        ul li {
+            margin-bottom: 0.2rem;
+        }
+                /*Containers*/
+        .container {
+            position: relative;
+            text-align: center;
+            background-color: #f3f3f3;
+            width: 90%;
+            max-width: 800px;
+            margin: 1rem auto 0;
+            border-radius: 5px;
+            padding: 0.5rem;
+        }
+        .close {
+            background-color:  #252525;
+            padding: 1px 3px;
+            color:#45ebb3;
+            position: absolute;
+            top: 0.25rem;
+            right: 0.25rem;
+            font-size: 10px;
+            cursor: pointer;
+            transition: 0.2s all linear;
+        }
+        .close:hover {
+            color: #f3f3f3;
+        }
+        .wrapper {
+            text-align: left;
+        }
+        .banner {
+            width: 200px;
+            max-width: 100%;
+        }
+
+                /*Fonts and colors*/
+        .title {
+            font-weight: 300;
+            font-size: 20px;
+        }
+        .informational {
+            font-weight: 200;
+            font-size: 14px;
+        }
+        .special {
+            color:rgb(252, 177, 64);
+            font-weight: 200;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            font-size: 10px;
+        }
+                /*Btns*/
+        .btn {
+            padding: 0.25rem 0.5rem;
+            display: inline-block;
+            transition: 0.2s all linear;
+        }
+        .iphone {
+            background-color:  #45ebb3;
+            font-size: 12px;
+        }
+        .iphone:hover {
+            color: #252525;
+        }
+        .nokia {
+            background-color:  #252525;
+            font-size: 12px;
+            margin-left: 0.3rem;
+        }
+        .nokia:hover {
+            color: #45ebb3;
+        }
+                 /*Media Q*/
+        @media screen and (min-width: 768px) {
+            .container {
+                display: grid;
+                grid-template-columns: 30% 65% 5%;
+                
+            }
+            .list, .links {
+            margin-bottom: 0.5rem;
+            }
+            .banner {
+                width: 130px;
+            }
+            .footer {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="banner_logo">
+            <img src="banner.png" width="400px" style="max-width: 100%;" alt="Logo" title="Logo" class="banner"> 
+        </div>
+        <div class="close" id="close">X</div>
+        <div class="wrapper">
+            <div class="list">
+                <ul>
+                    <li><h2 class="title">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio.!</h2></li>
+                    <li><p class="informational">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque aspernatur sequi hic doloremque nesciunt beatae nam delectus laudantium provident nihil.</p></li>
+                    <li><p class="special">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis esse est veritatis corporis natus saepe!</p></li>
+                </ul>
+            </div>
+            <div class="links">
+                <a href="#" class="btn iphone">Button</a>
+                <a href="#" class="btn nokia">Button</a>
+            </div>
+            <p class="footer">text</p>
+        </div>
+    </div>
+</body>
+</html>
